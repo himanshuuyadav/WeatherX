@@ -5,6 +5,7 @@ const apiKey = "c5432546b01bbe762cd776aac4e25d9d"
 const searchBox = document.querySelector(`#search`);
 
 const searchBtn = document.querySelector(`#search-btn`);
+alert("Arjav pls stop, We know you are topper, now stop showing off your knowledge");
 
 async function getWeather(city) {
     const response = await fetch(urlCurr + city + `&appid=${apiKey}`)
