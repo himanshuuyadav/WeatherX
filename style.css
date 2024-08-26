@@ -1,31 +1,39 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+body {
+    background-image: url(body3.png);
+    background-size: cover;
+    color: white;
 }
 
 a {
     text-decoration: none;
-    color: #333333;
 }
 
 .nav-panel {
     height: 70px;
-    background-color: #ff9900;
+    background-color: #061A40;
     display: flex;
     padding: 5px;
     font-weight: 550;
 }
 
 .nav-logo {
-    width: 210px;
-    background-image: url(nav-logo-removebg-preview.png);
-    background-size: cover;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
 }
 
 .nav-ops {
     width: 23%;
-    margin-left: 10px;
+    margin-left: 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -34,6 +42,7 @@ a {
 
 .nav-ops a {
     padding: 5px;
+    color: white;
 }
 
 .nav-space {
@@ -50,16 +59,21 @@ a {
 #search,
 #search-btn {
     border: 2px solid black;
-    background-color: rgb(255, 230, 197);
+    background-color: #376996;
     border-radius: 7px;
     height: 1.5rem;
     padding: 5px;
     font-size: 1rem;
+    color: white;
+}
+
+#search::placeholder {
+    color: white;
 }
 
 .nav-ops a:hover {
     border: 2px solid rgba(0, 0, 0, 0.6);
-    background-color: rgba(255, 252, 249, 0.8);
+    background-color: rgba(169, 186, 218, 0.308);
     border-radius: 7px;
     /* box-shadow: 2px 2px 2px #535353; */
 
@@ -67,15 +81,14 @@ a {
 
 #search:hover,
 #search-btn:hover {
-    box-shadow: 3px 3px 3px #535353;
+    box-shadow: 3px 3px 3px #363636;
 }
 
 #search-btn {
-    background-color: rgb(255, 230, 197);
+    background-color: #376996;
     cursor: pointer;
     height: 2.35rem;
-    border: 2px solid rgb(8, 77, 43);
-    color: rgb(25, 95, 72);
+    border: 2px solid black;
 }
 
 /* Container */
@@ -83,9 +96,6 @@ a {
     height: 87vh;
     display: flex;
     justify-content: center;
-    background-color: #dfd8da75;
-    color: #333333;
-    
 }
 
 .content {
@@ -96,14 +106,15 @@ a {
 }
 
 .msg {
-    margin-top: 50px;
+    margin-top: 100px;
     display: flex;
-    font-size: 2rem;
+    font-size: 3rem;
     padding: 5px;
-    font-weight: 600;
+    font-weight: 700;
     font-style: bold;
     flex-direction: row;
     margin-bottom: 30px;
+    color: rgb(37, 49, 37);
 }
 
 .cards {
@@ -112,31 +123,34 @@ a {
     justify-content: space-between;
 }
 
-.card-temp,.card-humid,.card-wind {
-    height: 150px;
-    width: 30%;
-    background-color:#ffffff;
+.card-temp,
+.card-humid,
+.card-wind {
+    height: 200px;
+    width: 25%;
+    background-color: #1F487E;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid rgb(226, 221, 221);
+    border: 2px solid rgb(15, 15, 15);
     border-radius: 10px;
     text-align: center;
+    justify-content: space-around;
 }
 
 .card-head {
-    height: 35px;
-    font-size: 1.3rem;
-    background-color: #ff9800;
+    font-size: 1.8rem;
     width: 100%;
     font-weight: 500;
     display: flex;
     border-radius: 5px 5px 0 0;
-    border-bottom: 2px solid rgb(226, 221, 221);
     justify-content: center;
 }
-#temp-info,#humid-info,#wind-info {
-    font-size: 1.8rem;
+
+#temp-info,
+#humid-info,
+#wind-info {
+    font-size: 2.2rem;
     font-weight: 600;
     margin-top: 10px;
     display: flex;
@@ -144,11 +158,12 @@ a {
     justify-content: space-around;
     align-items: center;
 }
-.feels-like,.wind-extra,.humid-extra{
-    margin-top: 10px;
-    font-size: 1.05rem;
-    font-weight: 500;
-    margin-bottom: 10px;
-    color: #333333;
 
+.feels-like,
+.wind-extra,
+.humid-extra {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 10px;
 }
